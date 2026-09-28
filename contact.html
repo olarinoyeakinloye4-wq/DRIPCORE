@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dripcore for orders, questions, and collaborations.">
+    <title>Contact | DRIPCORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="./IMAGE/LOGO.png" alt="Dripcore logo">
+            <h2>DRIPCORE</h2>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you.</p>
+            <p><strong>Email:</strong> dripcore53@gmail.com</p>
+            <p><strong>Phone:</strong> 08078178186</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348078178186" target="_blank" rel="noopener noreferrer">08078178186</a></p>
+            <p><strong>Instagram:</strong> @dripcore7</p>
+            <p><strong>TikTok:</strong> dripcore34</p>
+
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="form-message" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Dripcore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
