@@ -16,8 +16,33 @@ if (menuToggle && navLinks) {
   });
 }
 
-const whatsappNumber = '2348078178186';
+const whatsappNumber = '2347039863378';
 const supportEmail = 'dripcore53@gmail.com';
+const galleryGrid = document.getElementById('gallery-grid');
+const galleryImages = [
+  'Screenshot_20260619_134713_Gallery.jpg',
+  'Screenshot_20260619_134724_Gallery.jpg',
+  'Screenshot_20260619_134730_Gallery.jpg',
+  'Screenshot_20260619_134741_Gallery.jpg',
+  'Screenshot_20260619_134752_Gallery.jpg',
+  'Screenshot_20260619_134756_Gallery.jpg',
+  'Screenshot_20260619_134811_Gallery.jpg',
+  'Screenshot_20260619_134820_Gallery.jpg',
+  'Screenshot_20260619_134824_Gallery.jpg',
+  'Screenshot_20260619_134828_Gallery.jpg',
+  'Screenshot_20260619_134858_Gallery.jpg',
+  'Screenshot_20260619_134914_Gallery.jpg'
+];
+
+if (galleryGrid) {
+  galleryImages.forEach((imageName, index) => {
+    const image = document.createElement('img');
+    image.src = `./IMAGE/gallery/${imageName}`;
+    image.alt = `Dripcore gallery photo ${index + 1}`;
+    image.loading = 'lazy';
+    galleryGrid.append(image);
+  });
+}
 
 orderButtons.forEach((button) => {
   button.addEventListener('click', () => {
